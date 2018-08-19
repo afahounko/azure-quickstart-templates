@@ -83,7 +83,7 @@
     "addressPrefix": "10.0.0.0/16",
     "subnetName": "[concat(variables('vmName'),parameters('subnetName'))]",
     "subnetPrefix": "10.0.0.0/24",
-    "publicIPAddressName": "[parameters('publicIPAddressName')]",
+    "publicIPAddressName": "[concat(variables('vmName'),parameters('publicIPAddressName'))]",
     "publicIPAddressType": "Dynamic",
     "vmName": "[parameters('vmName')]",
     "vmSize": "Standard_A2",
