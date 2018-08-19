@@ -79,15 +79,15 @@
   "variables": {
     "imagePublisher": "MicrosoftWindowsServer",
     "imageOffer": "WindowsServer",
-    "nicName": "[concat(variables('vmName'),parameters('nicName')]",
+    "nicName": "[concat(variables('vmName'),parameters('nicName'))]",
     "addressPrefix": "10.0.0.0/16",
-    "subnetName": "[concat(variables('vmName'),parameters('subnetName')]",
+    "subnetName": "[concat(variables('vmName'),parameters('subnetName'))]",
     "subnetPrefix": "10.0.0.0/24",
     "publicIPAddressName": "[parameters('publicIPAddressName')]",
     "publicIPAddressType": "Dynamic",
     "vmName": "[parameters('vmName')]",
     "vmSize": "Standard_A2",
-    "virtualNetworkName": "[concat(variables('vmName'),parameters('virtualNetworkName')]",
+    "virtualNetworkName": "[concat(variables('vmName'),parameters('virtualNetworkName'))]",
     "subnetRef": "[resourceId('Microsoft.Network/virtualNetworks/subnets', variables('virtualNetworkName'), variables('subnetName'))]",
     "apiVersion": "2015-06-15",
     "hostDNSNameScriptArgument": "[concat('*.',parameters('location'),'.cloudapp.azure.com')]"
